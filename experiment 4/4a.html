@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Selector Forms</title>
+    <style>
+        p {
+            color: blue;
+        }
+        #heading {
+            color: red;
+        }
+        .box {
+            background-color: lightyellow;
+            padding: 10px;
+        }
+        h2, h3 {
+            color: green;
+        }
+        * {
+            font-family: Arial;
+        }
+
+        .container p {
+            color: purple;
+        }
+        .container > h3 {
+            background-color: lightblue;
+        }
+        h2 + p {
+            background-color: pink;
+        }
+        h2 ~ div {
+            border: 2px solid orange;
+        }
+
+        a:hover {
+            color: red;
+        }
+        input:focus {
+            background-color: lightgreen;
+        }
+
+        p::first-letter {
+            font-size: 30px;
+            color: red;
+        }
+        p::first-line {
+            font-weight: bold;
+        }
+
+        input[type="text"] {
+            border: 2px solid blue;
+        }
+        input[type="password"] {
+            border: 2px solid red;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="heading">CSS Selector Forms</h1>
+    <h2>Simple Selectors</h2>
+    <p>This is an element selector.</p>
+    <div class="box">
+        This is a class selector.
+    </div>
+    <h3>Group Selector Example</h3>
+    <h2>Combinator Selectors</h2>
+    <div class="container">
+        <h3>Child Selector</h3>
+        <p>Descendant selector example.</p>
+        <div>
+            <p>This paragraph is also a descendant.</p>
+        </div>
+    </div>
+    <h2>Adjacent Sibling Example</h2>
+    <p>This paragraph is immediately after h2.</p>
+    <div>General sibling 1</div>
+    <div>General sibling 2</div>
+    <h2>Pseudo-class Selector</h2>
+    <a href="#">Move mouse over this link</a>
+    <h2>Pseudo-element Selector</h2>
+    <p>This paragraph demonstrates first-letter and first-line pseudo-elements.</p>
+    <h2>Attribute Selector</h2>
+    <input type="text" placeholder="Text Box">
+    <br><br>
+    <input type="password" placeholder="Password Box">
+</body>
+</html>
